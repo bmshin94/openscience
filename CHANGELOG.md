@@ -10,6 +10,7 @@ tagged release also ships native binaries for Linux, macOS, and Windows.
 
 ### Changed
 
+- **Simplified download page.** Removed the "Build with OpenScience" integrations section from openscience.sh/download.
 - **Model access, rebuilt.** The Ace page's Model access card is five rows
   with one control each: Ace (state and Manage), Wallet (available amount and
   Add funds), Auto-reload (its rule and state), API key, and Preferred model

@@ -1,17 +1,11 @@
 import { useEffect, useState } from "react"
-import {
-  AppleLogoIcon,
-  ArrowUpRightIcon,
-  DownloadSimpleIcon,
-  LinuxLogoIcon,
-  WindowsLogoIcon,
-} from "@phosphor-icons/react"
+import { AppleLogoIcon, DownloadSimpleIcon, LinuxLogoIcon, WindowsLogoIcon } from "@phosphor-icons/react"
 import { CopyStatus, useCopy } from "@/components/Copy"
 import { FaqSection } from "@/components/Faq"
 import { Footer } from "@/components/Footer"
 import Header from "@/components/Header"
 import { useMeta } from "@/components/Meta"
-import { GITHUB, INSTALL_SCRIPT, NPM, NPM_SDK, RELEASES, RELEASE_DOWNLOAD, docs } from "@/data/links"
+import { INSTALL_SCRIPT, RELEASES, RELEASE_DOWNLOAD, docs } from "@/data/links"
 
 const DOWNLOADS = {
   "mac-arm64": {
@@ -52,14 +46,6 @@ const PLATFORMS = [
   { name: "Windows", icon: WindowsLogoIcon, requirement: "Windows 10 or later", targets: ["windows-x64"] },
   { name: "Linux", icon: LinuxLogoIcon, requirement: "AppImage", targets: ["linux-x64", "linux-arm64"] },
 ] satisfies { name: string; icon: typeof AppleLogoIcon; requirement: string; targets: Target[] }[]
-
-const INTEGRATIONS = [
-  { label: "Agent Client Protocol", detail: "Connect your editor", href: docs("commands") },
-  { label: "MCP server", detail: "Connect your tools", href: docs("commands") },
-  { label: "TypeScript SDK", detail: "@synsci/sdk", href: NPM_SDK },
-  { label: "Harbor adapter", detail: "Run benchmarks", href: `${GITHUB}/tree/main/tooling/harbor` },
-  { label: "Command line package", detail: "@synsci/openscience", href: NPM },
-]
 
 function detect(): Target {
   if (typeof navigator === "undefined") return "mac-arm64"
@@ -243,22 +229,6 @@ export default function Download() {
               <CliRow label="curl" command={`curl -fsSL ${INSTALL_SCRIPT} | bash`} />
               <CliRow label="npm" command="npm install -g @synsci/openscience" />
               <CliRow label="npx" command="npx synsci" />
-            </div>
-          </section>
-
-          <section data-component="download-section" aria-labelledby="integrations-title">
-            <h2 id="integrations-title">Build with OpenScience</h2>
-            <p>Connect your editor, tools, and research workflows.</p>
-            <div data-component="integrations">
-              {INTEGRATIONS.map((item) => (
-                <a key={item.label} href={item.href} target="_blank" rel="noreferrer">
-                  <span>
-                    {item.label}
-                    <small>{item.detail}</small>
-                  </span>
-                  <ArrowUpRightIcon size={20} aria-hidden="true" />
-                </a>
-              ))}
             </div>
           </section>
         </div>

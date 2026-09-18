@@ -1247,38 +1247,6 @@ pre {
       border-color: var(--color-border);
     }
   }
-  [data-component="integrations"] {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 0 2.5rem;
-    margin-top: 1.5rem;
-    a {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 1rem;
-      min-height: 84px;
-      padding-block: 1rem;
-      text-decoration: none;
-      line-height: 1.4;
-      border-bottom: 1px solid var(--color-border-weak);
-      small {
-        display: block;
-        color: var(--color-text-weak);
-        margin-top: 0.25rem;
-      }
-      svg {
-        color: var(--color-text-weak);
-        flex-shrink: 0;
-      }
-      &:hover {
-        text-decoration: underline;
-        svg {
-          color: var(--color-text-strong);
-        }
-      }
-    }
-  }
   [data-slot="button"]:active,
   [data-slot="platform-downloads"] a:active,
   button[data-component="cli-row"]:active {
@@ -1295,9 +1263,6 @@ pre {
         border-left: 0;
         border-top: 1px solid var(--color-border-weak);
       }
-    }
-    [data-component="integrations"] {
-      grid-template-columns: 1fr;
     }
     [data-component="download-section"] {
       padding-block: 2.5rem;
