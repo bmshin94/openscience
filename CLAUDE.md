@@ -1,3 +1,24 @@
+# openscience (synthetic-sciences/openscience)
+
+## 프로젝트 개요
+전 세계 과학 연구자들이 논문 검색, 가설 검증, 실험 데이터 분석을 AI와 함께 원스톱으로 수행하는 "오픈소스 과학 연구 전용 AI 워크벤치"
+최신 연구 문헌들을 유기적으로 엮어내고 실험 결과를 통계적으로 검증하여 새로운 과학적 발견의 속도를 가속
+연구실의 고립된 데이터를 개방하고 인류의 지식 탐구를 더 빠르고 투명하게 돕는 디지털 연구 실험실
+
+## 핵심 특징 & 추천 분야
+- 과학연구AI워크벤치
+- 논문가설자동검증
+- 실험데이터분석
+- 오픈사이언스생태계
+- 연구개발가속기
+
+---
+*이 문서는 오픈소스 큐레이터(Curator-Agent)에 의해 자동 생성된 가이드 문서입니다.*
+
+
+---
+## 기존 CLAUDE.md 내용
+
 # CLAUDE.md: OpenScience
 
 Read `AGENTS.md` first: repository map, commands, conventions, and the CI/release
