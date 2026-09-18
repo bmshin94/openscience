@@ -36,7 +36,7 @@
     "@tsconfig/bun": "catalog:",
     "@types/bun": "catalog:",
     "@types/turndown": "5.0.5",
-    "@types/yargs": "17.0.33",
+    "@types/yargs": "17.0.35",
     "@typescript/native-preview": "catalog:",
     "typescript": "catalog:",
     "vscode-languageserver-types": "3.17.5"
