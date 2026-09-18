@@ -39,7 +39,7 @@
     "@types/yargs": "17.0.33",
     "@typescript/native-preview": "catalog:",
     "typescript": "catalog:",
-    "vscode-languageserver-types": "3.17.5"
+    "vscode-languageserver-types": "3.18.3"
   },
   "dependencies": {
     "@agentclientprotocol/sdk": "0.29.0",
